@@ -39,6 +39,8 @@ jobs:
           path: ./download_cache
           key: compile-sh-cache-ssl-https-${{ hashFiles('./compile.sh') }}
           restore-keys: compile-sh-cache-ssl-https-
+      - name: Make compile.sh executable
+        run: chmod +x ./compile.sh    
       - name: Compile PHP
         run: >
           # Used "set -ex" instead of hashbang since script isn't executed with
