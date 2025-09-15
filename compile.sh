@@ -37,6 +37,8 @@ EXT_XXHASH_VERSION="0.2.0"
 EXT_ARRAYDEBUG_VERSION="0.2.0"
 EXT_ENCODING_VERSION="1.0.0"
 
+EXT_BINARY_VERSION="1.0.0"
+
 function write_out {
 	echo "[$1] $2"
 }
@@ -1143,6 +1145,8 @@ get_github_extension "arraydebug" "$EXT_ARRAYDEBUG_VERSION" "pmmp" "ext-arraydeb
 
 get_github_extension "encoding" "$EXT_ENCODING_VERSION" "pmmp" "ext-encoding"
 
+get_github_extension "binary" "$EXT_BINARY_VERSION" "pocketmineplus" "ext-binary"
+
 write_library "PHP" "$PHP_VERSION"
 
 write_configure
@@ -1279,6 +1283,7 @@ $HAVE_MYSQLI \
 --enable-xxhash \
 --enable-arraydebug \
 --enable-encoding \
+--enable-binary \
 $HAVE_VALGRIND \
 $CONFIGURE_FLAGS >> "$DIR/install.log" 2>&1
 write_compile
