@@ -9,4 +9,4 @@ Prebuilt PHP binaries for PocketminePlus.
 ### Libraries
 | Link to package | Needed for | Notes |
 |:----------------|:-----------|:------|
-| [ext-binary](https://github.com/pocketmineplus/ext-binary/tags) | High performance binary encoding | |
+| [ext-binary](https://github.com/pocketmineplus/ext-binary/tags) | High performance binary encoding | Stable |
